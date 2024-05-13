@@ -11,6 +11,8 @@
 		462D23622BF084A0008F7EF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D23612BF084A0008F7EF8 /* ContentView.swift */; };
 		462D23642BF084A2008F7EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462D23632BF084A1008F7EF8 /* Assets.xcassets */; };
 		462D23672BF084A2008F7EF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462D23662BF084A2008F7EF8 /* Preview Assets.xcassets */; };
+		462D237E2BF0891F008F7EF8 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D237D2BF0891F008F7EF8 /* MainTabView.swift */; };
+		46B98F872BF0FBFB00739373 /* LearnTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B98F862BF0FBFB00739373 /* LearnTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		462D23612BF084A0008F7EF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		462D23632BF084A1008F7EF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		462D23662BF084A2008F7EF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		462D237D2BF0891F008F7EF8 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		46B98F862BF0FBFB00739373 /* LearnTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,14 @@
 		462D235E2BF084A0008F7EF8 /* SwiftUI Facebook Clone */ = {
 			isa = PBXGroup;
 			children = (
-				462D235F2BF084A0008F7EF8 /* SwiftUI_Facebook_CloneApp.swift */,
+				462D23792BF085CC008F7EF8 /* App */,
+				462D236D2BF084EA008F7EF8 /* Core */,
+				462D237A2BF085D3008F7EF8 /* Model */,
+				462D23652BF084A2008F7EF8 /* Preview Content */,
+				462D237B2BF085D9008F7EF8 /* Service */,
+				462D237C2BF085E2008F7EF8 /* Utils */,
 				462D23612BF084A0008F7EF8 /* ContentView.swift */,
 				462D23632BF084A1008F7EF8 /* Assets.xcassets */,
-				462D23652BF084A2008F7EF8 /* Preview Content */,
 			);
 			path = "SwiftUI Facebook Clone";
 			sourceTree = "<group>";
@@ -65,6 +73,132 @@
 				462D23662BF084A2008F7EF8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		462D236D2BF084EA008F7EF8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				462D236E2BF084FF008F7EF8 /* Authentication */,
+				462D236F2BF08527008F7EF8 /* Components */,
+				462D23702BF0854F008F7EF8 /* CreatePost */,
+				462D23712BF08569008F7EF8 /* Feed */,
+				462D23722BF08570008F7EF8 /* Friends */,
+				462D23732BF08579008F7EF8 /* Marketplace */,
+				462D23742BF0858A008F7EF8 /* Menu */,
+				462D23752BF08592008F7EF8 /* Profile */,
+				462D23762BF08599008F7EF8 /* Root */,
+				462D23782BF085AA008F7EF8 /* Tabbar */,
+				462D23772BF085A0008F7EF8 /* Video */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		462D236E2BF084FF008F7EF8 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		462D236F2BF08527008F7EF8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		462D23702BF0854F008F7EF8 /* CreatePost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CreatePost;
+			sourceTree = "<group>";
+		};
+		462D23712BF08569008F7EF8 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		462D23722BF08570008F7EF8 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		462D23732BF08579008F7EF8 /* Marketplace */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Marketplace;
+			sourceTree = "<group>";
+		};
+		462D23742BF0858A008F7EF8 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		462D23752BF08592008F7EF8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		462D23762BF08599008F7EF8 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		462D23772BF085A0008F7EF8 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		462D23782BF085AA008F7EF8 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				46B98F862BF0FBFB00739373 /* LearnTabView.swift */,
+				462D237D2BF0891F008F7EF8 /* MainTabView.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		462D23792BF085CC008F7EF8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				462D235F2BF084A0008F7EF8 /* SwiftUI_Facebook_CloneApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		462D237A2BF085D3008F7EF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		462D237B2BF085D9008F7EF8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		462D237C2BF085E2008F7EF8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				462D23622BF084A0008F7EF8 /* ContentView.swift in Sources */,
+				46B98F872BF0FBFB00739373 /* LearnTabView.swift in Sources */,
 				462D23602BF084A0008F7EF8 /* SwiftUI_Facebook_CloneApp.swift in Sources */,
+				462D237E2BF0891F008F7EF8 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
