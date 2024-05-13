@@ -24,8 +24,8 @@ struct LearnTabView : View {
                 Image(.car1)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-//                    .cornerRadius(10)/
-//                    .padding()
+                    .cornerRadius(10)
+                    .padding()
             
 //                    .containerRelativeFrame([.horizontal]) { len, axe in
 //                            0.25
